@@ -1,0 +1,291 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** NOS AYUDA CON EL REM ***/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/** Globales **/
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    /* background-color:#F4AEAC; */
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+    text-align: center;
+    color: #C0C0C0;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--secundario);
+    
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.boton{
+    padding: 6px 30px;
+    background-color: white;
+}
+
+/*** header **/
+.main-section{
+    /* width: 100vw; */
+    height: 100vh;
+    background-image: url(img/mario.png);
+    background-size: 40% 110%;
+    background-repeat: no-repeat;
+    background-position: 75% -50px;
+    background-color:#F4AEAC;
+}
+header img {
+    width: 90px;
+    height: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2%;
+}
+
+header ul{
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+.menu-icons  li i{
+    padding-right: 15px;
+    border-right: 1px solid red; 
+}
+
+.menu-icons li:last-child i{
+    border-right: none;
+}
+.texto-centrado > p{
+    color: white;
+}
+/*** RESPONSIVE TABLET****/
+@media(max-width: 768px){
+    header{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*** NEW COLLECTION **/
+.new-collection{
+    text-align: center;
+    color: white;
+    margin: 0 2%;
+}
+
+.texto-centrado > button{
+    border: none;
+    padding: 20px 60px;
+    cursor: pointer;
+    background: white;
+    font-weight: bold;
+} 
+.texto-centrado{
+    margin-top: 150px;
+}
+
+/** PORTAFOLIO **/
+.portafolio{
+    height: 100vh;
+    background:white;
+    display: flex;
+}
+.portafolio > .middle{
+    width: 50%;
+}
+
+.line{
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin: 15px 15px 15px 0;
+}
+#card1{
+    background-color: #c3997d;
+    background-image: url(img/silueta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 70% 0;
+    height: 100%;
+}
+.text-card1{
+    position: relative;
+    top: 70%;
+    padding-left: 30px;
+    color: white;
+    font-size: 22px;
+    width: 200px;
+}
+.text-card1 > h5{
+    text-align: initial;
+}
+
+#card2{
+    display: flex;
+    flex-wrap: wrap;
+}  
+
+#card2 > .box{
+    width: 50%;
+    height: 50%;
+}
+.box > button{
+    justify-content: center;
+    margin-top: 30px;
+}
+.text-center{
+    padding-top: 45px;
+}
+
+.box-cara-homero{
+    background-image: url(img/homero.png);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    background-position: center;
+}
+.box-shoes{
+    background-image: url(img/shoe.png);
+    background-repeat: no-repeat;
+    background-size: 88% 52% ;
+    background-position: 70% 90%;
+    background-color: #EAC9BA;
+}
+.box-purse{
+    background-image: url(img/camera.png);
+    background-repeat: no-repeat;
+    background-size: 88% 52% ;
+    background-position: 70% 90%;
+    background-color: #F6F6F6;
+}
+
+/** ACCESSORIES ***/
+.accessories{
+    padding: 0 100px;
+    height: 70vh;
+    background:#F7F7F7;
+    display: flex;
+}
+.accessories > .middle{
+    /* width: 50%;
+    padding: 150px 50px; */
+    width: 50%;
+    padding: 0px 80px;    
+}
+.boton-accessories{
+    border: 1px solid black;
+    padding: 15px 50px;
+    background-color: #F0F0F0;
+}
+.accessories-imagen{
+    background-image: url(img/face.png);
+    background-size: 90%  95%;
+    background-repeat: no-repeat;
+}
+
+
+/** REGISTRO ***/
+.registro{
+    height: 70vh;
+    background: white;
+}
+
+.registro > h2{
+    width: 35%;
+}
+
+.plataformas ul li{
+    color: #AFAFAF;
+}
+
+.plataformas ul li i{
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+    padding: 0;
+}
+
+.correo{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    margin: 40px 0;
+}
+.input{
+    border: 1px solid black;
+    width: 320px;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+}
+.register{
+    border: 1px solid black;
+    width: 180px;
+    background: black;
+    color: white;
+    font-weight: bold;
+}
